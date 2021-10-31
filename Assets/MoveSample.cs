@@ -277,7 +277,7 @@ public class MoveSample : MonoBehaviour {
 	private void OnTriggerEnter(Collider col) {
 		if (col.gameObject.tag == "EnemyWeapon") {
 			// 敵の武器に接触したら
-			hp -= col.gameObject.GetComponent<WeaponController>().enemyController.attackPower;
+			//hp -= col.gameObject.GetComponent<WeaponController>().enemyController.attackPower;
 
             if (hp <= 0) {
 				hp = 0;
