@@ -50,4 +50,20 @@ public class EquipManager : MonoBehaviour
         // 武器の変更
         ChangeEquipWeapon(currentEquipWeaponNo);
     }
+
+    /// <summary>
+    /// デバッグ用
+    /// </summary>
+    void Start() {
+        ChangeEquipWeapon(0);
+    }
+
+    /// <summary>
+    /// デバッグ用
+    /// </summary>
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.P)) {
+            PreparateChangeEquipWeapon();
+        }    
+    }
 }
